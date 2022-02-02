@@ -19,5 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('index', [UserController::class, 'index']);
-Route::get('index-medium', [UserController::class, 'index_medium']);
-Route::get('index-fast', [UserController::class, 'index_fast']);
+// Esto no es error, solo renombre las rutas
+// Route::get('index-medium', [UserController::class, 'index_medium']);
+// Route::get('index-fast', [UserController::class, 'index_fast']);
+Route::get('index-fast-relacional', [UserController::class, 'index_fast_relacional']);
+Route::get('index-fast-polimorfica', [UserController::class, 'index_fast_polimorfica']);

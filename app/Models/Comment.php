@@ -38,6 +38,8 @@ class Comment extends Model
 
     public function attachments()
     {
-        return $this->morphMany(Attachment::class, 'attachment');
+        //Aqui tuve un error
+        // return $this->morphMany(Attachment::class, 'attachment');
+        return $this->morphMany(Attachment::class, 'attachmentable');
     }
 }

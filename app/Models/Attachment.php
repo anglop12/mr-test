@@ -9,6 +9,7 @@ class Attachment extends Model
 {
     use HasFactory;
 
+    public $timestamps = true;
     /**
      * The attributes that are mass assignable.
      *
@@ -16,8 +17,11 @@ class Attachment extends Model
      */
     protected $fillable = [
         'url',
-        'attachment_id',
-        'attachment_type'
+        //Aqui tuve un error
+        // 'attachment_id',
+        // 'attachment_type'
+        'attachmentable_id',
+        'attachmentable_type',
     ];
 
     public function attachmentable()

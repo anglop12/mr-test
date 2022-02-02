@@ -1,6 +1,6 @@
 @foreach ($users as $user)
 
-    <h2>{{ $user->name }} posts (view fast fast)</h2>
+    <h2>{{ $user->name }} posts</h2>
 
     <table>
         <thead>
